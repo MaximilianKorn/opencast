@@ -1,0 +1,51 @@
+# Ignore file for Opencast
+#
+
+# ignore maven target directories
+target/
+target-grunt/
+node_modules/
+bower_components/
+node/
+/build/
+
+# ignore Eclipse project data
+.project
+.classpath
+.factorypath
+.metadata/
+.settings/
+.recommenders/
+
+# ignore NetBeans project data
+*/nbproject/*
+*/nb-configuration.xml
+
+# ignore VSCode project data
+.vscode/
+
+# ingore OS artifacts
+.DS_Store
+
+# Ignore all temporary editor files
+*.swp
+*.iml
+.idea
+
+# Ignore Maven files and local repository
+/.m2/
+/settings.xml
+
+# Ignore mkdocs sites and python virtualenv (docs/guides/readme.md)
+docs/guides/*/site
+docs/guides/venv
+
+# Ignore Makefiles
+# Sometimes they help, but they should never be tracked
+Makefile
+
+# Ignore OS artifacts
+.DS_Store
+
+# Ignore phantomjs logs
+phantomjsdriver.log
