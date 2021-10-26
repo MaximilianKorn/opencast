@@ -220,6 +220,16 @@
        <artifactId>swagger-annotations</artifactId>
        <version>1.6.2</version>
     </dependency>
+    <dependency>
+      <groupId>javax.annotation</groupId>
+      <artifactId>javax.annotation-api</artifactId>
+      <version>1.3.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.threeten</groupId>
+      <artifactId>threetenbp</artifactId>
+      <version>1.5.1</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -269,14 +279,22 @@
             <Private-Package>
               org.opencastproject.external.exception,
               org.opencastproject.external.util,
-              org.opencastproject.external.util.statistics,
-              org.openapitools.client.model
+              org.opencastproject.external.util.statistics
             </Private-Package>
             <Export-Package>
               org.opencastproject.external.api,
               org.opencastproject.external.common,
               org.opencastproject.external.endpoint,
               org.opencastproject.external.userdirectory,
+              io.swagger.annotations,
+              javax.annotation,
+              javax.annotation.meta,
+              org.threeten.bp,
+              org.threeten.bp.chrono,
+              org.threeten.bp.format,
+              org.threeten.bp.jdk8,
+              org.threeten.bp.temporal,
+              org.threeten.bp.zone,
               org.openapitools.client.model
             </Export-Package>
             <Service-Component>

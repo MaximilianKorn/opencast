@@ -47,7 +47,7 @@ import org.opencastproject.util.doc.rest.RestQuery;
 import org.opencastproject.util.doc.rest.RestResponse;
 import org.opencastproject.util.doc.rest.RestService;
 
-import org.openapitools.client.model.*;
+//import org.openapitools.client.model.*;
 
 import com.entwinemedia.fn.data.json.Field;
 import com.entwinemedia.fn.data.json.JString;
@@ -55,8 +55,8 @@ import com.entwinemedia.fn.data.json.JValue;
 import com.entwinemedia.fn.data.json.Jsons;
 import com.entwinemedia.fn.data.json.SimpleSerializer;
 
-import com.google.gson.Gson; 
-import com.google.gson.GsonBuilder; 
+//import com.google.gson.Gson;
+//import com.google.gson.GsonBuilder;
 
 import org.apache.commons.lang3.StringUtils;
 import org.osgi.service.component.ComponentContext;
@@ -170,7 +170,7 @@ public class BaseEndpoint {
           @RestResponse(description = "The user information is returned.", responseCode = HttpServletResponse.SC_OK) })
   public Response getUserInfo2() {
     final User user = securityService.getUser();
-    Api me_json = new Api();
+    //Api me_json = new Api();
     //me_json.setEmail(user.getEmail());
     //me_json.setName(user.getName());
     //me_json.setProvider(user.getProvider());
